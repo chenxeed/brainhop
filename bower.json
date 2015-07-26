@@ -1,0 +1,27 @@
+{
+  "name": "brainhop",
+  "version": "0.0.0",
+  "authors": [
+    "Albert <chenx.phyt@gmail.com>"
+  ],
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "modernizr": "~2.8.3",
+    "rjs": "~2.1.19"
+  }
+}
