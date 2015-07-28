@@ -1,5 +1,7 @@
 // requirejs config
 require.config({
+	// baseUrl for public url, defined on app.js
+	baseUrl: 'assets/',
 	shim: {
 		'bootstrap' : {
 			deps : ['jquery']
@@ -7,10 +9,10 @@ require.config({
 	},
 	paths: {
 		// library
-		'jquery' : '/assets/jquery/dist/jquery.min',
-		'bootstrap' : '/assets/bootstrap/dist/js/bootstrap.min',
+		'jquery' : 'lib/jquery.min',
+		'bootstrap' : 'lib/bootstrap/bootstrap.min',
 		// page
-		'index' : '/assets/pages/index'
+		'index' : 'pages/index'
 	}
 });
 

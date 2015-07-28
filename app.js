@@ -11,6 +11,8 @@ var route_users = require('./routes/users');
 
 var app = express();
 
+var public_assets_path = (app.get('env') === 'development') ? 'public' : 'build';
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.engine('hbs', exphbs({defaultLayout: 'main', extname: '.hbs'}));
@@ -22,10 +24,10 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use('/assets', express.static(path.join(__dirname, 'public/components')));
-app.use('/assets', express.static(path.join(__dirname, 'public/images')));
-app.use('/assets', express.static(path.join(__dirname, 'public/javascripts')));
-app.use('/assets', express.static(path.join(__dirname, 'public/stylesheets')));
+console.log('public path is', public_assets_path);
+app.use('/assets', express.static(path.join(__dirname, public_assets_path+'/images')));
+app.use('/assets', express.static(path.join(__dirname, public_assets_path+'/javascripts')));
+app.use('/assets', express.static(path.join(__dirname, public_assets_path+'/stylesheets')));
 
 app.use('/', route_index);
 app.use('/users', route_users);

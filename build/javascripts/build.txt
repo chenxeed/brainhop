@@ -1,0 +1,10 @@
+
+main.js
+----------------
+lib/jquery.min.js
+lib/bootstrap/bootstrap.min.js
+main.js
+
+pages/index.js
+----------------
+pages/index.js
