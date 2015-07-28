@@ -7,10 +7,10 @@ require.config({
 	},
 	paths: {
 		// library
-		'jquery' : '/components/jquery/dist/jquery.min',
-		'bootstrap' : '/components/bootstrap/dist/js/bootstrap.min',
+		'jquery' : '/assets/jquery/dist/jquery.min',
+		'bootstrap' : '/assets/bootstrap/dist/js/bootstrap.min',
 		// page
-		'index' : '/javascripts/pages/index'
+		'index' : '/assets/pages/index'
 	}
 });
 
