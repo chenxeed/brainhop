@@ -27,7 +27,7 @@ app.use(cookieParser());
 console.log('public path is', public_assets_path);
 app.use('/assets', express.static(path.join(__dirname, public_assets_path+'/images')));
 app.use('/assets', express.static(path.join(__dirname, public_assets_path+'/javascripts')));
-app.use('/assets', express.static(path.join(__dirname, public_assets_path+'/stylesheets')));
+app.use('/assets', express.static(path.join(__dirname, 'build/stylesheets')));
 
 app.use('/', route_index);
 app.use('/users', route_users);

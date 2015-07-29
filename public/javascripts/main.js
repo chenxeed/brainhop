@@ -11,6 +11,7 @@ require.config({
 		// library
 		'jquery' : 'lib/jquery.min',
 		'bootstrap' : 'lib/bootstrap/bootstrap.min',
+		'lodash' : 'lib/lodash',
 		// page
 		'index' : 'pages/index'
 	}
