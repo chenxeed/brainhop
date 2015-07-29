@@ -1,1 +1,0 @@
-define("pages/index",[],function(){});
